@@ -70,7 +70,7 @@ curl -fsSL https://raw.githubusercontent.com/Hoang2255/install-pip/refs/heads/ma
 progress_bar $! "Install pip"
 
 # 7. CÀI THƯ VIỆN PYTHON
-pip install socks5 fake_useragent colorama mechanize requests bs4 pystyle \
+pip install socks5 fake_useragent colorama mechanize requests bs4 pystyle && apt --fix-broken install && apt autoremove -y \
   > /dev/null 2>&1 &
 progress_bar $! "Python libraries"
 
