@@ -44,11 +44,11 @@ progress_bar() {
 # ====== CÁC BƯỚC CÀI ĐẶT ======
 
 # 1. UPDATE
-pkg update -y > /dev/null 2>&1 &
+yes | pkg update -y > /dev/null 2>&1 &
 progress_bar $! "Update system"
 
 # 2. UPGRADE
-pkg upgrade -y > /dev/null 2>&1 &
+yes | pkg upgrade -y > /dev/null 2>&1 &
 progress_bar $! "Upgrade system"
 
 # 3. STORAGE
