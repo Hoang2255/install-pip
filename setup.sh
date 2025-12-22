@@ -23,7 +23,7 @@ echo "╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝╚═╝  
 echo -e "${RESET}"
 
 # Dòng chữ Khởi tạo chuyển sang màu Cam nhạt
-echo -e "${CAM_NHAT}🚀 KHỞI TẠO MÔI TRƯỜNG PYTHON 3.11${RESET}"
+echo -e "${CAM_NHAT}🚀 KHỞI TẠO MÔI TRƯỜNG PYTHON 3.11/PYTHON3.12/PHP${RESET}"
 sleep 1
 
 # ====== HÀM THANH CHẠY (BẢN ỔN ĐỊNH NHẤT) ======
