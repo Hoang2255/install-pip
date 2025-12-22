@@ -68,8 +68,11 @@ progress_bar $! "Setup Python 3.11"
 
 # 6. CÀI PIP
 python3.11 -m pip install --upgrade pip > /dev/null 2>&1 &
-progress_bar $! "Install pip"
+progress_bar $! "Install pip3.11"
 
+curl -fsSL https://raw.githubusercontent.com/Hoang2255/install-pip/refs/heads/main/install-pip.py \
+  | bash > /dev/null 2>&1 &
+progress_bar $! "Install pip3.12"
 # 7. CÀI THƯ VIỆN PYTHON
 pip install httpx fake_useragent colorama rich pycryptodome cloudscraper mechanize requests bs4 pystyle \
   > /dev/null 2>&1 &
