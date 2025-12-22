@@ -67,8 +67,7 @@ curl -fsSL https://raw.githubusercontent.com/Hoang2255/install-pip/refs/heads/ma
 progress_bar $! "Setup Python 3.11"
 
 # 6. CÀI PIP
-curl -fsSL https://raw.githubusercontent.com/Hoang2255/install-pip/refs/heads/main/install-pip.py \
-  | python > /dev/null 2>&1 &
+python3.11 -m pip install --upgrade pip > /dev/null 2>&1 &
 progress_bar $! "Install pip"
 
 # 7. CÀI THƯ VIỆN PYTHON
@@ -80,6 +79,7 @@ progress_bar $! "Python libraries"
 echo
 # Đoạn hoàn tất chuyển sang màu Cam nhạt
 echo -e "${CAM_NHAT}🎉 HOÀN TẤT CÀI ĐẶT BỞI HOANGPC 🎉${RESET}"
-echo -e "${XANH_DUONG}Python:${TRANG} $(python3.11 --version)"
+echo -e "${XANH_DUONG}Python chính:${TRANG} $(python --version)"
+echo -e "${XANH_DUONG}Python phụ:${TRANG} $(python3.11 --version)"
 echo -e "${XANH_DUONG}Pip:${TRANG} $(pip --version)"
-echo
+echo -e "${DO}Sử dụng lệnh python3.11 để chạy file và sử dụng pip3.11 để cài module"
