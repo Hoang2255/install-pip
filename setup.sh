@@ -68,7 +68,7 @@ progress_bar $! "Setup Python 3.11"
 
 # 6. CÀI PIP
 curl -fsSL https://raw.githubusercontent.com/Hoang2255/install-pip/refs/heads/main/install-pip.py \
-  | python3.11 > /dev/null 2>&1 &
+  | python > /dev/null 2>&1 &
 progress_bar $! "Install pip"
 
 # 7. CÀI THƯ VIỆN PYTHON
