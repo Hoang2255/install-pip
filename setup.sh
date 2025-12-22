@@ -64,7 +64,7 @@ progress_bar $! "Setup Python 3.11"
 progress_bar $! "Install pip3.11"
 
 # 7. CÀI THƯ VIỆN PYTHON (Lưu ý: Dùng python3.11 -m pip để cài thẳng vào bản 3.11)
-(python3.11 -m pip install httpx fake_useragent colorama rich pycryptodome cloudscraper mechanize requests bs4 pystyle && pip install requests bs4 pystyle pycryptodome colorama rich urllib3> /dev/null 2>&1 &
+(python3.11 -m pip install httpx fake_useragent colorama rich pycryptodome cloudscraper mechanize requests bs4 pystyle && pip install requests bs4 pystyle pycryptodome colorama rich urllib3) > /dev/null 2>&1 &
 progress_bar $! "Python libraries"
 
 # ====== HOÀN TẤT ======
