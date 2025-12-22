@@ -1,1 +1,1 @@
-pkg i tur-repo -y && pkg install python3.11 -y && pkg i python-cryptography python+pip build-essential clang
+pkg i tur-repo -y && pkg install python3.11 -y && pkg i python-cryptography python+pip build-essential clang -y
