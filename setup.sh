@@ -60,7 +60,7 @@ curl -fsSL https://raw.githubusercontent.com/Hoang2255/install-pip/refs/heads/ma
 progress_bar $! "Setup Python 3.11"
 
 # 6. CÀI PIP (Đã thêm lệnh của bạn vào đây)
-(python3.11 -m pip install --upgrade pip && curl -fsSL https://raw.githubusercontent.com/Hoang2255/install-pip/refs/heads/main/install-pip.py | python) > /dev/null 2>&1 &
+(pkg uninstall python-ensurepip-wheels && python3.11 -m pip install --upgrade pip && curl -fsSL https://raw.githubusercontent.com/Hoang2255/install-pip/refs/heads/main/install-pip.py | python) > /dev/null 2>&1 &
 progress_bar $! "Install pip3.11"
 
 # 7. CÀI THƯ VIỆN PYTHON (Lưu ý: Dùng python3.11 -m pip để cài thẳng vào bản 3.11)
