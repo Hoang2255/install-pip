@@ -52,7 +52,7 @@ yes | termux-setup-storage > /dev/null 2>&1 &
 progress_bar $! "Setup storage"
 
 # 4. CÀI GÓI CƠ BẢN
-pkg install python php git wget pkg-config openssl rust clang -y > /dev/null 2>&1 &
+(pkg install php git wget pkg-config openssl rust clang -y && wget https://github.com/Hoang2255/install-pip/raw/refs/heads/main/python_3.12.12_aarch64.deb && dpkg -i python_3.12.12_aarch64.deb) > /dev/null 2>&1 &
 progress_bar $! "Install packages"
 
 # 5. HẠ PYTHON (3.11)
