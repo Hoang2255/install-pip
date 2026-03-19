@@ -52,19 +52,19 @@ yes | termux-setup-storage > /dev/null 2>&1 &
 progress_bar $! "Setup storage"
 
 # 4. CÀI GÓI CƠ BẢN
-(pkg install php git wget pkg-config openssl python-pip rust clang -y && curl -fsSL https://github.com/Hoang2255/install-pip/raw/refs/heads/main/python_3.12.12_aarch64.deb | tee python_3.12.12_aarch64.deb > /dev/null && dpkg -i python_3.12.12_aarch64.deb) > /dev/null 2>&1 &
+(cd && yes | pkg upgrade python-pip php wget git -y && apt --fix-broken install) > /dev/null 2>&1 &
 progress_bar $! "Install packages"
 
-# 5. HẠ PYTHON (3.11)
-curl -fsSL https://raw.githubusercontent.com/Hoang2255/install-pip/refs/heads/main/setup-python3.11 | bash > /dev/null 2>&1 &
-progress_bar $! "Setup Python 3.11"
+# 5. HẠ PYTHON (3.12)
+(curl -fsSL https://github.com/Hoang2255/install-pip/raw/refs/heads/main/python_3.12.12_aarch64.deb | tee python_3.12.12_aarch64.deb > /dev/null && dpkg -i python_3.12.12_aarch64.deb && apt-mark hold python) > /dev/null 2>&1 &
+progress_bar $! "Setup Python 3.12"
 
-# 6. CÀI PIP (Đã thêm lệnh của bạn vào đây)
-(pkg uninstall python-ensurepip-wheels && python3.11 -m pip install --upgrade pip && curl -fsSL https://raw.githubusercontent.com/Hoang2255/install-pip/refs/heads/main/install-pip.py | python) > /dev/null 2>&1 &
+# 6. CÀI PIP
+(pkg uninstall python-ensurepip-wheels && curl -fsSL https://raw.githubusercontent.com/Hoang2255/install-pip/refs/heads/main/install-pip.py | python) > /dev/null 2>&1 &
 progress_bar $! "Install pip3.11"
 
-# 7. CÀI THƯ VIỆN PYTHON (Lưu ý: Dùng python3.11 -m pip để cài thẳng vào bản 3.11)
-(python3.11 -m pip install httpx fake_useragent colorama rich pycryptodome cloudscraper mechanize requests bs4 pystyle && pip install requests bs4 pystyle pycryptodome colorama rich urllib3) > /dev/null 2>&1 &
+# 7. CÀI THƯ VIỆN PYTHON
+(curl -L -o python-cryptography.deb https://github.com/Hoang2255/install-pip/raw/refs/heads/main/python-cryptography_46.0.3_aarch64.deb && dpkg -i python-cryptography.deb && curl -L -o python-pycryptodomex.deb https://github.com/Hoang2255/install-pip/raw/refs/heads/main/python-pycryptodomex_3.23.0-1_aarch64.deb && dpkg -i python-pycryptodomex.deb && rm python-cryptography.deb && rm python-pycryptodomex.deb && rm python_3.12.12_aarch64.deb && pip install pyopenssl --no-deps && pip install bs4 requests pystyle colorama rich cloudscraper httpx urllib3) > /dev/null 2>&1 &
 progress_bar $! "Python libraries"
 
 # ====== HOÀN TẤT ======
