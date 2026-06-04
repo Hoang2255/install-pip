@@ -52,7 +52,7 @@ yes | termux-setup-storage > /dev/null 2>&1 &
 progress_bar $! "Setup storage"
 
 # 4. CÀI GÓI CƠ BẢN
-(cd && pkg i python-tkinter mandoc perl python-pip termux-services php wget git -y && apt --fix-broken install) > /dev/null 2>&1 &
+(cd && pkg i python-tkinter mandoc perl python-pip termux-services php wget git -y && makewhatis && apt --fix-broken install) > /dev/null 2>&1 &
 progress_bar $! "Install packages"
 
 # 5. HẠ PYTHON (3.12)
