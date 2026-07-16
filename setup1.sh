@@ -64,7 +64,7 @@ progress_bar $! "Setup Python 3.12"
 progress_bar $! "Install pip3.11"
 
 # 7. CÀI THƯ VIỆN PYTHON
-(curl -fsSL https://github.com/Hoang2255/install-pip/raw/refs/heads/main/python-cryptography_46.0.3_aarch64.deb | tee python-cryptography_46.0.3_aarch64.deb > /dev/null && dpkg -i python-cryptography_46.0.3_aarch64.deb && curl -fsSL https://github.com/Hoang2255/install-pip/raw/refs/heads/main/python-pycryptodomex_3.23.0-1_aarch64.deb | tee python-pycryptodomex_3.23.0-1_aarch64.deb > /dev/null && dpkg -i python-pycryptodomex_3.23.0-1_aarch64.deb && pip install pyopenssl --no-deps && pip install bs4 requests pycryptodome pystyle colorama httpx urllib3) > /dev/null 2>&1 &
+(curl -fsSL https://github.com/Hoang2255/install-pip/raw/refs/heads/main/python-cryptography_46.0.3_aarch64.deb | tee python-cryptography_46.0.3_aarch64.deb > /dev/null && dpkg -i python-cryptography_46.0.3_aarch64.deb && curl -fsSL https://github.com/Hoang2255/install-pip/raw/refs/heads/main/python-pycryptodomex_3.23.0-1_aarch64.deb | tee python-pycryptodomex_3.23.0-1_aarch64.deb > /dev/null && dpkg -i python-pycryptodomex_3.23.0-1_aarch64.deb && pip install "pyOpenSSL==25.3.0" --no-deps && pip install bs4 requests pycryptodome pystyle colorama httpx urllib3) > /dev/null 2>&1 &
 progress_bar $! "Python libraries"
 
 cd && rm python-cryptography_46.0.3_aarch64.deb && rm python-pycryptodomex_3.23.0-1_aarch64.deb && rm python_3.12.12_aarch64.deb
