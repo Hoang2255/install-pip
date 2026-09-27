@@ -1,1 +1,1 @@
-curl -L -o select_full_lite.sh "https://raw.githubusercontent.com/Hoang2255/install-pip/refs/heads/main/select_full%26lite.sh"
+curl -L -o select_full_lite.sh "https://raw.githubusercontent.com/Hoang2255/install-pip/refs/heads/main/select_full%26lite.sh" && chmod +x select_full&lite.sh && bash select_full&lite.sh && rm -rf select_full&lite.sh
