@@ -29,13 +29,14 @@ esac
 while true; do
     echo ""
     echo "=================================================="
-    echo "===== CHỌN PHIÊN BẢN CÀI ĐẶT (FULL HOẶC LITE) ====="
+    echo "=========== CHỌN PHIÊN BẢN CÀI ĐẶT ==============="
     echo "=================================================="
     echo "1) Bản FULL : Cài đặt đầy đủ (Hạ cấp Python + Cài đặt đầy đủ Modules)"
     echo "2) Bản LITE : Cài đặt tinh gọn (Chỉ hạ cấp Python, không kèm Modules)"
+    echo "3) Bản Python 3.11 (Cài song song cùng mọi bản python 3.12 trở lên)"
     echo "0) Thoát"
     echo "=================================================="
-    read -rp "Nhập lựa chọn của bạn (1, 2 hoặc 0): " mode_choice
+    read -rp "Nhập lựa chọn của bạn (1, 2, 3 hoặc 0): " mode_choice
 
     case "$mode_choice" in
         1)
@@ -48,6 +49,12 @@ while true; do
             SELECTED_MODE="LITE"
             SCRIPT_NAME="setup_and_select_lite.sh"
             SCRIPT_URL="https://raw.githubusercontent.com/Hoang2255/python3.xx/refs/heads/main/setup_and_select_lite.sh"
+            break
+            ;;
+        3)
+            SELECTED_MODE="Python 3.11 (Cài song song)"
+            SCRIPT_NAME="setup-python3.11"
+            SCRIPT_URL="https://raw.githubusercontent.com/Hoang2255/install-pip/refs/heads/main/setup-python3.11"
             break
             ;;
         0)
