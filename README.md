@@ -40,7 +40,7 @@ Bộ công cụ Bash và Python script chuyên dụng cho **Termux (Android)**, 
 - Ứng dụng **Termux** (Khuyến nghị cài đặt bản mới nhất từ [F-Droid](https://f-droid.org/packages/com.termux/) hoặc [GitHub Termux Releases](https://github.com/termux/termux-app/releases); **không** dùng bản cũ trên Google Play do không còn cập nhật repo).
 - Kiến trúc CPU máy: `aarch64` hoặc `armv7l` / `arm`.
 - Kết nối mạng Internet ổn định.
-- Dung lượng bộ nhớ trống tối thiểu: **500MB – 1GB**.
+- Dung lượng bộ nhớ trống tối thiểu: **1.2GB – 2.3GB**.
 
 ---
 
