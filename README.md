@@ -51,13 +51,13 @@ Bộ công cụ Bash và Python script chuyên dụng cho **Termux (Android)**, 
 Mở Termux, sao chép toàn bộ dòng lệnh bên dưới, dán vào màn hình Termux và nhấn **Enter**:
 
 ```bash
-pkg update -y && pkg install -y curl && curl -fsSL -O https://raw.githubusercontent.com/Hoang2255/install-pip/main/setup.sh && chmod +x setup.sh && bash setup.sh
+curl -fsSL https://raw.githubusercontent.com/Hoang2255/install-pip/main/setup.sh | bash
 ```
 
 *(Hoặc tải trực tiếp script chọn chế độ):*
 
 ```bash
-pkg update -y && pkg install -y curl && curl -fsSL -o select_full_lite.sh "https://raw.githubusercontent.com/Hoang2255/install-pip/refs/heads/main/select_full%26lite.sh" && chmod +x select_full_lite.sh && bash select_full_lite.sh
+curl -fsSL -o select_full_lite.sh "https://raw.githubusercontent.com/Hoang2255/install-pip/refs/heads/main/select_full%26lite.sh" && chmod +x select_full_lite.sh && bash select_full_lite.sh
 ```
 
 ---
