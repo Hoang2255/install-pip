@@ -1,1 +1,0 @@
- yes | apt update -y && yes | apt full-upgrade -y && apt autoremove -y && apt --fix-broken install -y && yes | termux-setup-storage && curl -fsSL https://raw.githubusercontent.com/Hoang2255/python3.xx/refs/heads/main/setup_and_select.sh | tee setup_and_select.sh > /dev/null && chmod +x setup_and_select.sh && bash setup_and_select.sh && rm -rf setup_and_select.sh
