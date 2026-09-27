@@ -1,1 +1,1 @@
-pkg i tur-repo -y && pkg install python3.11 -y && pip3.11 install bs4 requests pystyle urllib3
+pkg i tur-repo -y && pkg install python3.11 -y && pip3.11 install bs4 requests pystyle urllib3 && echo "Hãy dùng lệnh 'pỵthon3.11 & pip3.11" để tải hoặc chạy file"
