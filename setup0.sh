@@ -1,1 +1,1 @@
-curl -L -o select_full_lite.sh "https://raw.githubusercontent.com/Hoang2255/install-pip/refs/heads/main/select_full%26lite.sh" && chmod +x select_full_lite.sh && echo "Vui lòng dùng lệnh 'bash select_full_lite.sh'"
+cd && curl -L -o select_full_lite.sh "https://raw.githubusercontent.com/Hoang2255/install-pip/refs/heads/main/select_full%26lite.sh" && chmod +x select_full_lite.sh && echo "Vui lòng dùng lệnh 'bash select_full_lite.sh'"
