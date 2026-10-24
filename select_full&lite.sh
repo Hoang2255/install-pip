@@ -77,12 +77,12 @@ echo "=================================================="
 
 # 3.1. Cấp quyền truy cập bộ nhớ Termux
 echo ""
-echo "[1/3] Đang yêu cầu cấp quyền truy cập bộ nhớ..."
+echo "[1/2] Đang yêu cầu cấp quyền truy cập bộ nhớ..."
 termux-setup-storage
 
 # 3.2. Sửa lỗi và dọn dẹp các gói hệ thống
 echo ""
-echo "[2/3] Đang sửa lỗi và dọn dẹp các gói hệ thống..."
+echo "[2/2] Đang sửa lỗi và dọn dẹp các gói hệ thống..."
 apt autoremove -y
 
 echo ""
