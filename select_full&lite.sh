@@ -83,12 +83,7 @@ termux-setup-storage
 # 3.2. Sửa lỗi và dọn dẹp các gói hệ thống
 echo ""
 echo "[2/3] Đang sửa lỗi và dọn dẹp các gói hệ thống..."
-apt autoremove -y && apt --fix-broken install
-
-# 3.3. Cập nhật toàn diện kho ứng dụng và hệ thống
-echo ""
-echo "[3/3] Đang cập nhật toàn diện hệ thống Termux..."
-yes | apt update -y && yes | apt full-upgrade -y
+apt autoremove -y
 
 echo ""
 echo "=================================================="
